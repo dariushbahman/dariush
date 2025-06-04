@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Passion</title>
+    <style>
+        body {
+            background-image: url('biology.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .content {
+            background-color: rgba(0, 20, 10, 0.7);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 50px auto;
+            box-shadow: 0 10px 25px rgba(0, 50, 25, 0.5);
+            animation: fadeIn 1s ease-in-out;
+            border: 1px solid rgba(100, 255, 150, 0.2);
+        }
+
+        h1 {
+            color: #7cffcb;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(124, 255, 203, 0.5);
+            text-align: center;
+        }
+
+        .bio-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #7cffcb;
+            box-shadow: 0 0 20px rgba(124, 255, 203, 0.3);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #e0ffe0;
+        }
+
+        .highlight {
+            color: #7cffcb;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #7cffcb, #55ccaa);
+            color: #003320;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(124, 255, 203, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(124, 255, 203, 0.5);
+            background: linear-gradient(45deg, #55ccaa, #7cffcb);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cell animation in background */
+        .cell {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 15s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .content {
+                padding: 25px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Why I Love Biology</h1>
+        
+        <img src="biology.jpg" alt="Biology" class="bio-image">
+        
+        <p>From the moment I first looked through a microscope, I was hooked. <span class="highlight">Biology reveals the poetry of existence</span> - how trillions of cells work in harmony to create life, how DNA writes our story, and how ecosystems balance with perfect precision.</p>
+        
+        <p>What fascinates me most is <span class="highlight">the interconnectedness of all living things</span>. The way mitochondria power our cells mirrors how chloroplasts harness sunlight, showing nature's elegant solutions to energy problems across different life forms.</p>
+        
+        <p>In studying neuroscience, I'm awestruck by how <span class="highlight">100 billion neurons create consciousness</span> from electrical impulses. The more I learn, the more I realize how much we still don't understand about the simplest organisms, let alone the human brain.</p>
+        
+        <p>Biology isn't just a subject - it's <span class="highlight">the operating manual for life on Earth</span>, with new chapters being discovered every day. That's why I can't imagine studying anything else.</p>
+        
+        <a href="dariush.html" class="back-button">Back to Main Page</a>
+    </div>
+</body>
+</html>

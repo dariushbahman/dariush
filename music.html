@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Obsession</title>
+    <style>
+        body {
+            background-image: url('music.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .content {
+            background-color: rgba(40, 0, 40, 0.8);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 50px auto;
+            box-shadow: 0 10px 25px rgba(255, 0, 200, 0.4);
+            animation: fadeIn 1s ease-in-out;
+            border: 1px solid rgba(255, 100, 200, 0.3);
+        }
+
+        h1 {
+            color: #ff00cc;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(255, 0, 200, 0.7);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .music-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #ff00cc;
+            box-shadow: 0 0 20px rgba(255, 0, 200, 0.5);
+            filter: brightness(1.1);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #ffe6ff;
+        }
+
+        .highlight {
+            color: #ff66ff;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(255, 100, 255, 0.3);
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff00cc, #cc00ff);
+            color: #330033;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 200, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 0, 200, 0.7);
+            background: linear-gradient(45deg, #cc00ff, #ff00cc);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Floating music notes */
+        .music-note {
+            position: absolute;
+            font-size: 1.5rem;
+            animation: floatNote 8s infinite linear;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        @keyframes floatNote {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-80vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .content {
+                padding: 25px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating music notes -->
+    <div class="music-note" style="left:10%; animation-delay:0s;">♪</div>
+    <div class="music-note" style="left:30%; animation-delay:2s;">♫</div>
+    <div class="music-note" style="left:70%; animation-delay:1s;">♩</div>
+    <div class="music-note" style="left:85%; animation-delay:3s;">♬</div>
+    <div class="music-note" style="left:25%; animation-delay:4s;">♭</div>
+
+    <div class="content">
+        <h1>My Life's Soundtrack</h1>
+        
+        <img src="music.jpeg" alt="Music Passion" class="music-image">
+        
+        <p>Music isn't just sound—it's <span class="highlight">time travel</span>. A single chord can teleport me to memories I forgot I had. When the bass drops, my soul <span class="highlight">syncs with the universe's rhythm</span> in ways words can't describe.</p>
+        
+        <p>I chase that perfect moment when <span class="highlight">melody and emotion collide</span>—when goosebumps spread like wildfire during a guitar solo, or when lyrics articulate feelings I couldn't name. Music speaks the language my heart understands best.</p>
+        
+        <p>Creating music is alchemy: <span class="highlight">transforming silence into gold</span>. Whether composing digital beats or jamming acoustically, the process feels like uncovering hidden frequencies that already existed in the cosmos.</p>
+        
+        <p>In a world of noise, music is <span class="highlight">the only noise I need</span>. It's mathematics made emotional, physics made visceral. My headphones aren't accessories—they're portals to alternate dimensions.</p>
+        
+        <a href="dariush.html" class="back-button">Back to Main Page</a>
+    </div>
+</body>
+</html>

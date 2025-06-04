@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Passion</title>
+    <style>
+        body {
+            background-image: url('chemirsty.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .content {
+            background-color: rgba(10, 0, 30, 0.7);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 50px auto;
+            box-shadow: 0 10px 25px rgba(100, 0, 255, 0.5);
+            animation: fadeIn 1s ease-in-out;
+            border: 1px solid rgba(150, 100, 255, 0.3);
+        }
+
+        h1 {
+            color: #b388ff;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(179, 136, 255, 0.7);
+            text-align: center;
+        }
+
+        .chem-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px solid #b388ff;
+            box-shadow: 0 0 20px rgba(179, 136, 255, 0.5);
+            filter: saturate(1.2);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #f0e6ff;
+        }
+
+        .highlight {
+            color: #b388ff;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(179, 136, 255, 0.3);
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #b388ff, #7c4dff);
+            color: #1a0033;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(179, 136, 255, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(179, 136, 255, 0.7);
+            background: linear-gradient(45deg, #7c4dff, #b388ff);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Floating atoms animation */
+        .atom {
+            position: absolute;
+            opacity: 0.15;
+            animation: float 20s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(50vw, -50vh) rotate(180deg); }
+            100% { transform: translate(0, 0) rotate(360deg); }
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .content {
+                padding: 25px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating atoms (dynamic background elements) -->
+    <div class="atom" style="top:10%; left:5%; font-size:30px;">⚛️</div>
+    <div class="atom" style="top:70%; left:80%; font-size:40px;">⚛️</div>
+    <div class="atom" style="top:30%; left:60%; font-size:25px;">⚛️</div>
+
+    <div class="content">
+        <h1>Why Chemistry Explodes My Mind</h1>
+        
+        <img src="chemirsty.jpg" alt="Chemistry Lab" class="chem-image">
+        
+        <p>Chemistry isn't just mixing liquids—it's <span class="highlight">the hidden language of the universe</span>. Every reaction tells a story, from the fiery dance of combustion to the silent bond between atoms. When I first saw a precipitation reaction, I realized: <span class="highlight">magic is just chemistry we don't understand yet</span>.</p>
+        
+        <p>The periodic table is my favorite alphabet. How <span class="highlight">carbon builds life</span> while silicon builds computers, how a single proton difference turns sodium (explosive metal) into magnesium (plant nutrient)—this is nature's ultimate puzzle.</p>
+        
+        <p>In the lab, I chase that <span class="highlight">"Eureka!" moment</span> when solutions change color or crystals form. The thrill of balancing equations is like solving a murder mystery—<span class="highlight">atoms never lie</span>, they just rearrange the truth.</p>
+        
+        <p>Chemistry doesn't just explain <em>what</em> things are—it reveals <span class="highlight">why they behave the way they do</span>. That’s power. That’s beauty. That’s why my lab coat is my superhero cape.</p>
+        
+        <a href="dariush.html" class="back-button">Back to Main Page</a>
+    </div>
+</body>
+</html>
